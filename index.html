@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Save the Date · XV Años de Ashley Rocío · 20 Diciembre 2026</title>
+<meta name="description" content="Aparta la fecha: XV Años de Ashley Rocío Vivas León — 20 de diciembre de 2026, Morelia, Michoacán">
+<meta property="og:title" content="Save the Date · XV Años de Ashley Rocío">
+<meta property="og:description" content="Domingo 20 de diciembre de 2026 · Morelia, Michoacán">
+<meta property="og:image" content="https://save-the-date-xv-ashley-rocio-vivas-leon.vercel.app/og.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0B1A3F">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter+Tight:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="./noche-v.jpg">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+:root{--night:#0B1A3F;--sapphire:#1E3A8A;--steel:#4A7BB7;--sky:#74A7FF;--mist:#D3E2FF;--silver:#C0C0C0;--gun:#8E9091;--on-dark:#EEF3FF;--on-dark-soft:#C9D6F2;
+  --script:'Great Vibes',cursive;--caps:'Cinzel',serif;--serif:'Cormorant Garamond',Georgia,serif;--sans:'Inter Tight',system-ui,sans-serif;
+  --foil-dark:linear-gradient(100deg,#8E9091 0%,#C0C0C0 26%,#FBFCFF 50%,#C0C0C0 74%,#8E9091 100%);}
+html,body{height:100%;}
+body{background:var(--night);color:var(--on-dark);font-family:var(--serif);font-weight:500;overflow-x:clip;}
+.foil-dark{background:var(--foil-dark);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:#E6ECF5;animation:goldSweep 7s ease-in-out infinite;}
+.fix-script{display:inline-block;padding:.22em .45em;margin:-.22em -.45em;line-height:1.25;box-decoration-break:clone;-webkit-box-decoration-break:clone;}
+@keyframes goldSweep{0%,100%{background-position:0% 0}50%{background-position:100% 0}}
+#stars{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:50;}
+
+/* ENTRADA */
+#gate{position:fixed;inset:0;z-index:100;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;cursor:pointer;touch-action:manipulation;overflow:hidden;background:var(--night);}
+#gate .g-bg{position:absolute;inset:-6%;background:url('./noche-v.jpg') center/cover;opacity:.55;animation:drift 26s ease-in-out infinite alternate;}
+#gate .g-veil{position:absolute;inset:0;background:radial-gradient(circle at 50% 46%,rgba(11,26,63,.25),rgba(11,26,63,.85) 70%);}
+.medal{position:relative;width:170px;height:170px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  background:radial-gradient(circle at 35% 28%,#ffffff 0%,#E6EAF0 28%,#C0C0C0 58%,#8E9091 100%);
+  box-shadow:0 0 0 8px rgba(192,192,192,.18),0 0 60px rgba(210,225,255,.45),inset 0 3px 8px rgba(255,255,255,.9),inset 0 -8px 16px rgba(60,70,90,.35);animation:breathe 3.6s ease-in-out infinite;}
+.medal::after{content:'';position:absolute;inset:12px;border-radius:50%;border:1px solid rgba(30,58,138,.35);}
+.medal span{font-family:var(--script);font-size:76px;color:#1E3A8A;line-height:1;padding:.1em .2em;text-shadow:0 1px 0 rgba(255,255,255,.7),0 -1px 0 rgba(20,36,90,.35);}
+@keyframes breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}
+.g-hint{position:relative;font-family:var(--caps);font-weight:600;font-size:14px;letter-spacing:.32em;text-transform:uppercase;color:var(--on-dark);padding-left:.32em;}
+.g-hint::after{content:'';display:block;width:34px;height:1px;background:var(--silver);margin:10px auto 0;animation:pulse 2.2s ease-in-out infinite;}
+@keyframes pulse{0%,100%{opacity:.4;transform:scaleX(1)}50%{opacity:1;transform:scaleX(1.7)}}
+
+/* PORTADA */
+main{position:relative;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;text-align:center;overflow:hidden;isolation:isolate;visibility:hidden;}
+.bg{position:absolute;inset:-6% 0;z-index:-3;}
+.bg i{position:absolute;inset:0;background:url('./noche-v.jpg') center 30%/cover no-repeat;animation:drift 26s ease-in-out infinite alternate;}
+@media (min-width:700px){.bg i{background-image:url('./noche.jpg');}}
+@keyframes drift{0%{transform:translate3d(0,0,0) scale(1.02)}50%{transform:translate3d(-1.6%,1%,0) scale(1.06)}100%{transform:translate3d(1.2%,-1.8%,0) scale(1.10)}}
+.sheen{position:absolute;inset:0;z-index:-2;mix-blend-mode:soft-light;pointer-events:none;overflow:hidden;}
+.sheen::before{content:'';position:absolute;top:-20%;bottom:-20%;left:-60%;width:60%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55) 50%,transparent);animation:sweep 9s ease-in-out infinite;}
+@keyframes sweep{0%{transform:translateX(0) skewX(-12deg)}55%,100%{transform:translateX(330%) skewX(-12deg)}}
+.veil{position:absolute;inset:0;z-index:-2;background:linear-gradient(to top,rgba(8,18,46,.94) 0%,rgba(8,18,46,.8) 45%,rgba(8,18,46,.55) 75%,rgba(8,18,46,.3) 100%);}
+.content{padding:90px 22px calc(46px + env(safe-area-inset-bottom));max-width:520px;width:100%;}
+.std{font-family:var(--caps);font-weight:600;font-size:14px;letter-spacing:.42em;text-transform:uppercase;padding-left:.42em;color:var(--on-dark);text-shadow:0 2px 14px rgba(0,0,0,.6);}
+.xv{font-family:var(--serif);font-style:italic;font-weight:600;font-size:21px;color:var(--on-dark-soft);margin-top:8px;}
+.name{font-family:var(--script);font-weight:400;font-size:clamp(96px,28vw,132px);line-height:1.25;margin:2px 0 0;}
+.full{font-family:var(--serif);font-weight:600;font-size:22px;letter-spacing:.08em;text-shadow:0 2px 14px rgba(0,0,0,.6);}
+.rule{display:flex;align-items:center;justify-content:center;gap:14px;margin:18px 0 14px;}
+.rule i{width:50px;height:1px;background:linear-gradient(90deg,transparent,var(--silver));}
+.rule i.r{background:linear-gradient(90deg,var(--silver),transparent);}
+.rule svg{width:16px;height:16px;color:var(--silver);}
+.date{font-family:var(--sans);font-weight:700;font-size:16px;letter-spacing:.12em;text-shadow:0 2px 12px rgba(0,0,0,.7);text-transform:uppercase;}
+.city{font-family:var(--sans);font-weight:600;font-size:16px;letter-spacing:.14em;color:var(--on-dark);text-shadow:0 2px 12px rgba(0,0,0,.7);margin-top:6px;}
+.cd{display:flex;justify-content:center;gap:9px;margin:26px 0 22px;perspective:600px;}
+.cd div{width:72px;padding:14px 4px 10px;border-radius:50%/42%;border:1px solid rgba(220,228,240,.7);background:rgba(11,26,63,.5);}
+.cd b{display:inline-block;font-family:var(--sans);font-weight:700;font-size:28px;line-height:1;font-variant-numeric:tabular-nums;color:#fff;}
+.cd span{display:block;font-family:var(--sans);font-weight:600;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--on-dark-soft);margin-top:7px;}
+.soon{font-family:var(--script);font-size:40px;line-height:1.25;}
+.soon-sub{font-family:var(--sans);font-weight:500;font-size:15px;letter-spacing:.06em;color:var(--on-dark-soft);margin-top:6px;}
+.actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:22px;}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:12px 24px;border-radius:40px;text-decoration:none;font-family:var(--sans);font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#13265f;background:linear-gradient(135deg,#ffffff,#D3E2FF);border:1px solid rgba(255,255,255,.7);box-shadow:0 10px 26px rgba(0,0,0,.3);animation:breathe 3.4s ease-in-out infinite;}
+.credit{margin-top:22px;font-family:var(--sans);font-weight:500;font-size:13px;color:var(--on-dark-soft);}
+.credit a{color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.4);}
+.music{position:fixed;right:16px;top:calc(16px + env(safe-area-inset-top));z-index:60;width:50px;height:50px;border-radius:50%;border:1px solid rgba(255,255,255,.5);background:rgba(11,26,63,.6);display:none;align-items:center;justify-content:center;cursor:pointer;}
+.music.on{display:flex;}.music svg{width:22px;height:22px;}
+.music .bars{display:none;gap:3px;align-items:flex-end;height:18px;}.music .bars i{width:3px;background:#fff;border-radius:2px;animation:bar 1s ease-in-out infinite;}
+.music .bars i:nth-child(2){animation-delay:.2s}.music .bars i:nth-child(3){animation-delay:.4s}
+@keyframes bar{0%,100%{height:5px}50%{height:18px}}
+.music.playing .bars{display:flex;}.music.playing svg{display:none;}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;}}
+</style>
+</head>
+<body>
+<canvas id="stars" aria-hidden="true"></canvas>
+
+<div id="gate" role="button" aria-label="Toca para abrir">
+  <div class="g-bg"></div><div class="g-veil"></div>
+  <div class="medal"><span>AV</span></div>
+  <div class="g-hint">Toca para abrir</div>
+</div>
+
+<main id="main">
+  <div class="bg"><i></i></div>
+  <div class="sheen" aria-hidden="true"></div>
+  <div class="veil" aria-hidden="true"></div>
+  <div class="content" id="content">
+    <div class="std">Save the Date</div>
+    <div class="xv">Mis XV Años</div>
+    <h1 class="name"><span class="foil-dark fix-script">Ashley</span></h1>
+    <div class="full">Rocío Vivas León</div>
+    <div class="rule"><i></i><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1l2.6 7.4L22 11l-7.4 2.6L12 21l-2.6-7.4L2 11l7.4-2.6z"/></svg><i class="r"></i></div>
+    <div class="date">Domingo 20 · Diciembre · 2026</div>
+    <div class="city">Morelia, Michoacán</div>
+    <div class="cd" id="cd">
+      <div><b id="d">00</b><span>Días</span></div><div><b id="h">00</b><span>Horas</span></div>
+      <div><b id="m">00</b><span>Min</span></div><div><b id="s">00</b><span>Seg</span></div>
+    </div>
+    <div class="soon"><span class="foil-dark fix-script" style="animation-delay:-3s">Invitación formal próximamente</span></div>
+    <p class="soon-sub">Aparta la fecha: muy pronto recibirás todos los detalles.</p>
+    <div class="actions"><a class="btn" id="cal" href="#" target="_blank" rel="noopener">Guardar en mi calendario</a></div>
+    <p class="credit">Diseño por <a href="https://instagram.com/elysium.invitaciones" target="_blank" rel="noopener">@elysium.invitaciones</a></p>
+  </div>
+</main>
+
+<audio id="bgAudio" src="https://bsjoelxktbvlavfoozhk.supabase.co/storage/v1/object/public/fotos-clientes/audio/xv-ashley-rocio-vivas-leon/cancion.mp3" preload="none" loop></audio>
+<button class="music" id="music" type="button" aria-label="Música"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg><span class="bars"><i></i><i></i><i></i></span></button>
+
+<script>
+var REDUCED=matchMedia('(prefers-reduced-motion: reduce)').matches,audio=document.getElementById('bgAudio'),mBtn=document.getElementById('music');
+audio.addEventListener('play',function(){mBtn.classList.add('playing');});audio.addEventListener('pause',function(){mBtn.classList.remove('playing');});
+mBtn.addEventListener('click',function(){if(audio.paused)audio.play().catch(function(){});else audio.pause();});
+
+/* estrellas plateadas que caen */
+var Stars=(function(){var cv=document.getElementById('stars'),ctx=cv.getContext('2d'),W,H,list=[],burst=0,run=false;
+  function size(){var d=Math.min(2,devicePixelRatio||1);W=innerWidth;H=innerHeight;cv.width=W*d;cv.height=H*d;ctx.setTransform(d,0,0,d,0,0);}size();addEventListener('resize',size);
+  function make(b){var d=Math.random();return{x:Math.random()*W,y:b?-20-Math.random()*H*.9:-20,r:2+d*5.5,vy:(b?1.6:.5)+d*(b?2.4:1.1),vx:(Math.random()-.5)*.5,rot:Math.random()*6.3,vr:(Math.random()-.5)*.03,tw:Math.random()*6.3,a:.45+d*.5};}
+  function draw(s){ctx.save();ctx.translate(s.x,s.y);ctx.rotate(s.rot);ctx.globalAlpha=s.a*(.65+.35*Math.sin(s.tw));
+    var g=ctx.createRadialGradient(0,0,0,0,0,s.r*2.6);g.addColorStop(0,'rgba(255,255,255,.9)');g.addColorStop(1,'rgba(200,215,240,0)');ctx.fillStyle=g;ctx.beginPath();ctx.arc(0,0,s.r*2.6,0,6.28);ctx.fill();
+    var gr=ctx.createLinearGradient(-s.r,-s.r,s.r,s.r);gr.addColorStop(0,'#8E9091');gr.addColorStop(.5,'#fff');gr.addColorStop(1,'#C0C0C0');ctx.fillStyle=gr;ctx.beginPath();
+    for(var i=0;i<10;i++){var rr=i%2?s.r*.42:s.r,an=i*Math.PI/5-Math.PI/2;ctx.lineTo(Math.cos(an)*rr,Math.sin(an)*rr);}ctx.closePath();ctx.fill();ctx.restore();}
+  function frame(){ctx.clearRect(0,0,W,H);var now=Date.now(),t=now<burst?70:18;if(list.length<t&&Math.random()<(now<burst?.9:.14))list.push(make(false));
+    for(var i=list.length-1;i>=0;i--){var s=list[i];s.y+=s.vy;s.x+=s.vx;s.rot+=s.vr;s.tw+=.06;if(s.y>H+30)list.splice(i,1);else draw(s);}if(run)requestAnimationFrame(frame);}
+  return{start:function(){if(REDUCED)return;burst=Date.now()+3500;for(var i=0;i<55;i++)list.push(make(true));run=true;requestAnimationFrame(frame);}};})();
+
+/* entrada */
+(function(){var gate=document.getElementById('gate'),opened=false;
+  function open(){if(opened)return;opened=true;audio.volume=.75;var p=audio.play();if(p&&p.catch)p.catch(function(){});
+    document.getElementById('main').style.visibility='visible';mBtn.classList.add('on');Stars.start();
+    gsap.to(gate,{opacity:0,duration:1,ease:'power2.inOut',onComplete:function(){gate.remove();}});
+    gsap.fromTo('#content > *',{y:30,opacity:0},{y:0,opacity:1,duration:1.1,stagger:.1,ease:'power3.out',delay:.3});}
+  gate.addEventListener('click',open);gate.addEventListener('touchend',function(e){e.preventDefault();open();},{passive:false});})();
+
+/* cuenta regresiva con giro */
+(function(){var T=new Date('2026-12-20T17:00:00-06:00').getTime(),prev={};
+  function set(id,v){if(prev[id]===v)return;prev[id]=v;var el=document.getElementById(id);el.textContent=v;if(!REDUCED&&window.gsap)gsap.fromTo(el,{rotateX:-80,opacity:.3},{rotateX:0,opacity:1,duration:.45,ease:'back.out(2)'});}
+  function tick(){var d=Math.max(0,T-Date.now());set('d',String(Math.floor(d/864e5)).padStart(2,'0'));set('h',String(Math.floor(d%864e5/36e5)).padStart(2,'0'));set('m',String(Math.floor(d%36e5/6e4)).padStart(2,'0'));set('s',String(Math.floor(d%6e4/1e3)).padStart(2,'0'));}
+  tick();setInterval(tick,1000);})();
+
+document.getElementById('cal').href='https://calendar.google.com/calendar/render?action=TEMPLATE&text='+encodeURIComponent('XV Años de Ashley Rocío Vivas León')+'&dates=20261220T230000Z/20261221T070000Z&details='+encodeURIComponent('Invitación formal próximamente')+'&location='+encodeURIComponent('Morelia, Michoacán');
+</script>
+</body>
+</html>
